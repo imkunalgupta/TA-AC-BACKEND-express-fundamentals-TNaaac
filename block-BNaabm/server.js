@@ -19,5 +19,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(4000, () => {
-  console.log('Server listeining on port 4000');
+  console.log('Server listeining on port 4k');
 });
