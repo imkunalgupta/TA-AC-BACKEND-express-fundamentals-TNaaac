@@ -7,7 +7,7 @@ var app = express();
 // }
 
 // app.use(logger);
-// or we can use below annoynomous middleware fn instead of above logger middleware fn
+// or we can use below annoynomous middleware fn instead of above logger middleware function
 
 app.use((req, res, next) => {
   console.log(req.method, req.url);
