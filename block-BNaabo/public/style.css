@@ -1,0 +1,440 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom styles */
+ *,
+ *::before,
+ *::after{
+     box-sizing: border-box;
+ }
+ body{
+     font-family: 'Roboto', sans-serif;
+ }
+ /* general */
+ .container{
+    max-width: 1200px;
+    margin: 0px auto;
+ }
+ .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .flex-start{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+ .flex-wrap{
+   flex-wrap: wrap;
+ }
+a{
+    text-decoration: none;
+}
+/* Header */
+.hero-header{
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(assets/media/banner.jpg);
+    text-align: center;
+    height: 675px;
+    background-size: contain ;
+}
+.navbar-media a{
+     width: 36px;
+     display: inline-block;
+     line-height: 36px;
+     height: 32px;
+     color: #464646;
+     border-radius: 50%;
+     text-align: center;
+     margin: 24px 4px;
+     background-color: white;
+}
+.navbar-pages{
+   margin-top: 12px;
+   background-color: white;
+   position: fixed;
+   width: 1200px;
+}
+.navbar-pages span{
+    font-size: 36px;
+    color: #EA523E;
+    margin-left: 16px;
+}
+.pages a{
+    margin-right: 32px;
+    font-size: 16px;
+    color: #464646;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.pages  a:hover{
+    color: #EA523E;
+}
+.pages  a::before{
+    content: '';
+    position: absolute;
+    top: -42px;
+    left: 0;
+    background-color:#EA523E ;
+    height: 4px;
+    transition: 3s all;
+}
+.pages  a:hover:before{
+    width: 100%;
+}
+.hero-text{
+    margin-top: 280px;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.hero-text a{
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    background-color:#EA523E ;
+}
+.hero-text p{
+   margin: 24px 0;
+}
+.dots a{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 160px 6px 0 6px;
+    background-color: #464646;
+}
+/****** section *******/
+/* section-header */
+.section-header{
+    margin: 172px 0px 72px 0px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 18px;
+    color: #424141;
+}
+h3::after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+.section-header p{
+    font-size: 18px;
+    color:  #6B6969;
+}
+/* image-container */
+.image-container{
+    width: 23%;
+    height: 266px;
+    margin: 20px 0;
+}
+.image-container img{
+    width: 100%;
+    object-fit: cover;
+}
+/******* service-section ******/
+.service-section{
+    text-align: center;
+}
+.icon-container{
+    width: 23%;
+    height: 290px;
+    line-height: 300px;
+}
+.icon-container a{
+    font-size: 48px;
+    color: white;
+}
+.file{
+    background-color: #5BBD9D;
+}
+.telegram{
+    background-color: #E57F30;
+}
+.university{
+    background-color: #3898DA;
+}
+.flask{
+    background-color: #68CD72;
+}
+/****** portfolio-section ********/
+.portfolio-section{
+    text-align: center;
+}
+/****** team-section ******/
+.team-section{
+    text-align: center;
+}
+.team-section  .image-container img{
+    border-radius: 50%;
+}
+/**** Design-Section *******/
+.design-section{
+    text-align: center;
+}
+.design-section header{
+    margin: 72px 0 56px 0;
+    font-style: italic;
+    font-size: 18px;
+    color: #B7B7B7;
+}
+.design-section .flex{
+    align-items: flex-start;
+}
+h5{
+    font-size: 24px;
+    color: #848484;
+    text-transform: uppercase;
+}
+.design-article{
+    width: 65%;
+    text-align: start;
+}
+.design-article p{
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+    font-size: 17px;
+    color: #6B6969;
+}
+.design-aside{
+    width: 32%;
+}
+.data{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: start;
+    background-color: #E7E7E7;
+    margin: 12px 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+}
+.data p{
+    background-color: #EA513D;
+    display: inline-block;
+    padding-left: 16px;
+}
+.photoshop{
+    width: 90%;
+}
+.html-css{
+    width: 80%;
+}
+.development{
+    width: 70%;
+}
+.marketing{
+    width: 80%;
+}
+/****** contact-section *****/
+.contact-section{
+    text-align:  center;
+}
+.contact-section .flex{
+    align-items: start;
+    margin-top: 42px;
+}
+.contact-article{
+    width: 60%;
+    text-align:start;
+}
+.contact-article p{
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+    font-size: 17px;
+    color: #6B6969;
+}
+address{
+    color: #6B6969;
+    line-height: 1.5;
+}
+address a{
+    color:#EA513D ;
+}
+.contact-aside{
+    width: 36%;
+}
+form{
+    width: 100%;
+}
+input,textarea,button{
+    width: 100%;
+    height: 42px;
+    margin-bottom:16px;
+    padding-left: 8px;
+    font-size: 16px;
+    border: none;
+    border: 1px #E7E7E7 solid;
+}
+textarea{
+    height:110px ;
+    padding: 0;
+    font-size: 18px;
+}
+.contact-aside button{
+    background-color: #EA513D;
+    text-transform: uppercase;
+    color:#E7E7E7;
+}
+/**** Footer *****/
+.main-footer{
+    color:#6b6969 ;
+    padding: 16px;
+    margin-top:150px ;
+}
+.main-footer a{
+    padding: 14px 56px;
+    display: inline-block;
+    color: #E7E7E7;
+    text-transform: uppercase;
+    background-color: #EA513D;
+}
+ /* Gallery */
+.gallery-aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #EA513D;
+    width: 26%;
+    padding: 32px;
+    height: 90vh;
+}
+.navbar{
+     color:#E7E7E7 ;
+     background-color:#EA513D ;
+ }
+ .navbar a{
+     text-decoration: none;
+     color: #E7E7E7 ;
+     font-size: 32px;
+ }
+ .navbar img{
+     width: 80px;
+     margin-right: 12px;
+}
+.navbar .home{
+    font-size: 16px ;
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 1px solid #E7E7E7;
+}
+.gallery-aside article{
+    line-height: 1.4;
+    margin-top: 35vh;
+}
+h2{
+    font-size: 38px;
+    margin: 24px 0;
+    color:#131212 ;
+    font-weight: 700;
+}
+.gallery-aside p{
+    font-size: 18px;
+    margin:
+    16px 0;
+}
+ h4{
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+}
+/**** gallery-section ****/
+.gallery-section{
+    width: 74%;
+    height: 100%;
+    margin-left: 26%;
+    text-align: center;
+}
+.gallery-section .column{
+   width: 45%;
+   justify-content: space-evenly;
+   display: flex;
+   flex-direction: column;
+}
+.column img{
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 32px;
+}
+ .gallery-section .flex{
+     justify-content: space-evenly;
+     align-items: flex-start;
+}
+.gallery-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 26%;
+    height: 10vh;
+    padding: 16px 32px;
+    background-color:#EA513D ;
+}
+.gallery-footer .navbar-media a{
+    background-color:#EA513D  ;
+    border: 1px solid #E7E7E7;
+    color:#E7E7E7 ;
+    margin: 0 8px;
+}
