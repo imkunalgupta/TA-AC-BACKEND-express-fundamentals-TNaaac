@@ -4,7 +4,7 @@ var cookieParser = require('cookie-parser');
 var app = express();
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extened: false }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
