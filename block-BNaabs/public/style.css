@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(
+    to right,
+    pink,
+    rgb(185, 181, 175),
+    rgb(241, 233, 241)
+  );
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+form {
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+
+input {
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  width: 100%;
+}
