@@ -6,28 +6,23 @@ var app = express();
 //   console.log(req.method, req.url);
 //   next();
 // });
-app.use(logger('dev'));
 
+//middleware
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extened: false }));
 app.use(cookieParser());
 
-app.use((req, res, next) => {
-  var count = req.cookies.count;
-  if (count) {
-    res.cookie('username', 'kunal');
-  } else {
-    res.cookie('count', 1);
-  }
-  console.log(count);
-
+app.use('/about', (req, res, next) => {
+  res.cookie('username', 'kunal');
+  res.end('About Page');
   next();
 });
 
-app.use(express.json());
-app.use(express.urlencoded({ extened: false }));
-
-app.get((req, res) => {
-  res.send('Welcome');
+app.use((req, res, next) => {
+  console.log(req.cookies);
 });
+
 app.get('/', (req, res) => {
   res.send('kunal');
 });
